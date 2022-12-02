@@ -16,5 +16,6 @@ model user{
   firstname String
   lasname String
   pasword String 
+  
 
 }
