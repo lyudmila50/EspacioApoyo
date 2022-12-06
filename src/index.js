@@ -1,4 +1,5 @@
 import express, { Router } from "express";
+
 import { login } from "./controllers/sessions-controller.js";
 const app = express();
 app.use(express.json());

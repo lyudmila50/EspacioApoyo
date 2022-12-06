@@ -16,6 +16,8 @@ model user{
   firstname String
   lasname String
   pasword String 
-  
+
 
 }
+
+//sirve para comunicarce con la base datos sin nececidad de escribir el sql
