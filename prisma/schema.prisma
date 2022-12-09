@@ -21,3 +21,18 @@ model user{
 }
 
 //sirve para comunicarce con la base datos sin nececidad de escribir el sql
+
+
+
+model Group {
+  id Int @id @default(autoincrement())
+  name String @unique
+  nationalTeams NationalTeam[]
+}
+
+model NationalTeam {
+  id Int @id @default(autoincrement())
+  name String @unique
+  group Group @relation(fields: [groupId], references: [id])
+  groupId Int
+}
